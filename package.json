@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build-iis": "npx nuxi build --preset=iis_node",
+    "build": "nuxt build",
+    "dev": "nuxt dev --host",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "createkey": "dotnet dev-certs https --export-path ./server.pem --no-password --format PEM"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "@nuxt/ui": "^2.19.2",
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "firebase-admin": "^12.5.0",
+    "googleapis": "^105.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "nuxt": "^3.13.0",
+    "nuxt-vue3-google-signin": "^0.0.11",
+    "vue": "latest",
+    "vue-router": "latest"
+  }
+}
