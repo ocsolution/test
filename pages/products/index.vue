@@ -10,7 +10,7 @@
           class="w-full h-[48px] object-cover mb-2" />
         <h2 class="text-xl font-semibold">{{ product.title }}</h2>
         <p class="text-gray-600 mb-2">{{ product.description }}</p>
-        <NuxtLink :to="`/products/detail?id=${product.id}`" class="text-blue-500 hover:underline"> View Details
+        <NuxtLink :to="`/products/${product.id}`" class="text-blue-500 hover:underline"> View Details
         </NuxtLink>
       </div>
     </div>

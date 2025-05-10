@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     port: 3000,
   },
   nitro: {
-    debug: true
+    preset: 'node-server',
   },
   devtools: { enabled: true },
   modules: ['@nuxt/ui'],
@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
   vite: {
     esbuild: {
-      drop: ['debugger'],
+      drop: ['debugger', 'console'],
     },
   },
 })
